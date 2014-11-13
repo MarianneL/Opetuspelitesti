@@ -13,9 +13,11 @@ package com.moikka
 		
 		public function BG(stage:Stage)
 		{			
+			// Lisätään pelaaja näyttämölle
 			var ourPlayer:Player = new Player(stage);
 			stage.addChild(ourPlayer);
 			
+			// Asetetaan pelaaja siihen kohtaan mihin halutaan
 			ourPlayer.x = 40;
 			ourPlayer.y = 276;
 
