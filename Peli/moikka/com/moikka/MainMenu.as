@@ -10,6 +10,7 @@ package com.moikka
 	public class MainMenu extends MovieClip
 	{
 		public var mainClass:Engine;
+	
 		
 		public function MainMenu(passedClass:Engine)
 		{

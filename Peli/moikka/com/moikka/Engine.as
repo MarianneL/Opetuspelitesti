@@ -11,6 +11,7 @@ package com.moikka
 		
 		public var mainMenu:MainMenu;
 		public var playScreen:BG;
+		public var house1Screen:House1Screen;
 		
 		
 		public function Engine()
@@ -28,7 +29,7 @@ package com.moikka
 				removeChild(playScreen);
 				playScreen = null;
 			}
-			
+	
 			addChild(mainMenu);
 		}	
 
@@ -43,6 +44,21 @@ package com.moikka
 				mainMenu = null;
 			}	
 			addChild(playScreen);
+		}
+		
+		
+		public function goToHouse1()
+		{
+			house1Screen = new House1Screen(stage);
+
+			
+			if(playScreen)
+			{
+				removeChild(playScreen);
+				playScreen = null;
+			}
+			
+			addChild(house1Screen);
 		}
 
 	}

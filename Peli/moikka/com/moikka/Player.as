@@ -70,16 +70,18 @@ package com.moikka
 			
 			// Tämän avulla pysytään pelialueella
 			if(x > 810 /*stageRef.stageWidth*/)
-			{
 				x = 810 /* stageRef.stageWidth*/;
-			}
 			else if(x < 0)
 				x = 0;
 			
 			// currentLabel katsoo flashissä ukkelin timelinelta, missä labelissa ollaan (labelit: idle, walking.)
-			// Jos label ei ole sama kuin se animaatio jonka pitäisi pyöriä, animaatio vaihdetaan oikeaksi
+			// Jos label ja animaatio jonka pitäisi pyöriä ei täsmää, animaatio vaihdetaan oikeaksi
+			// TAi jotain sellasta, en oikeen ymmäräny :D
 			if(this.currentLabel != animationState)
 				this.gotoAndStop(animationState);
+			
+			
+			
 		}
 		
 		
