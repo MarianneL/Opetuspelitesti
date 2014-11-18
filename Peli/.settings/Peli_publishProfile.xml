@@ -22,10 +22,10 @@
     <qtDefaultName>1</qtDefaultName>
     <rnwkDefaultName>1</rnwkDefaultName>
     <swcDefaultName>1</swcDefaultName>
-    <flashFileName>C:\Users\Marianne\Documents\PeliTesti\bin-debug\Peli.swf</flashFileName>
+    <flashFileName>C:\Users\Marianne\Documents\Opetuspelitesti\Peli\bin-debug\Peli.swf</flashFileName>
     <projectorWinFileName>Peli.exe</projectorWinFileName>
     <projectorMacFileName>Peli.app</projectorMacFileName>
-    <htmlFileName>C:\Users\Marianne\Documents\PeliTesti\bin-debug\Peli.html</htmlFileName>
+    <htmlFileName>C:\Users\Marianne\Documents\Opetuspelitesti\Peli\bin-debug\Peli.html</htmlFileName>
     <gifFileName>Peli.gif</gifFileName>
     <jpegFileName>Peli.jpg</jpegFileName>
     <pngFileName>Peli.png</pngFileName>
@@ -114,6 +114,14 @@
         <rsl-url>http://fpdownload.adobe.com/pub/swz/tlf/2.0.0.232/textLayout_2.0.0.232.swz</rsl-url>
         <policy-file-url>http://fpdownload.adobe.com/pub/swz/crossdomain.xml</policy-file-url>
         <rsl-url>textLayout_2.0.0.232.swz</rsl-url>
+      </library-path-entry>
+      <library-path-entry>
+        <swc-path>$(FlexSDK)/frameworks/libs/flex.swc</swc-path>
+        <linkage>merge</linkage>
+      </library-path-entry>
+      <library-path-entry>
+        <swc-path>$(FlexSDK)/frameworks/libs/core.swc</swc-path>
+        <linkage>merge</linkage>
       </library-path-entry>
     </LibraryPath>
     <LibraryVersions>

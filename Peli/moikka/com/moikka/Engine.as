@@ -16,6 +16,7 @@ package com.moikka
 		
 		public function Engine()
 		{
+			// Aluksi tuodaan näytölle Main Menu
 			showMainMenu();		
 		}
 		

@@ -13,12 +13,11 @@ package com.moikka
 	
 	public class BG extends MovieClip
 	{
-		public var mainClass:Engine;;
-		
-		public var bgMove = stage.x;
+		public var mainClass:Engine;
+		private var stageRef:Stage;
 		
 		public function BG(stage:Stage)
-		{			
+		{						
 			// Lisätään pelaaja näyttämölle
 			var ourPlayer:Player = new Player(stage);
 			stage.addChild(ourPlayer);
@@ -26,9 +25,12 @@ package com.moikka
 			// Asetetaan pelaaja siihen kohtaan mihin halutaan
 			ourPlayer.x = 40;
 			ourPlayer.y = 276;
-
+			
+			
+			
 			//house1.addEventListener(MouseEvent.CLICK, house1Clicked);
 		}
+
 		
 		public function house1Clicked(event:MouseEvent)
 		{

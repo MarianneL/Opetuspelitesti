@@ -13,10 +13,10 @@ package com.moikka
 		private var stageRef:Stage;
 		private var key:KeyObject;
 		private var speed:Number = 10;
-		
+
 		// tallennetaan tieto siitä, onko painettu vasenta tai oikeaa liikenäppäintä
-		private var leftPressed:Boolean = false;
-		private var rightPressed:Boolean = false;
+		public var leftPressed:Boolean = false;
+		public var rightPressed:Boolean = false;
 		
 		// määrittää sen mikä animaatio ukkelilla pyörii
 		var animationState:String = "idle";
@@ -31,7 +31,7 @@ package com.moikka
 		
 		
 		public function loop(e:Event):void
-		{
+		{			
 			// Jos painetaan vasenta tai A näppäintä...
 			if(key.isDown(Keyboard.LEFT) || key.isDown(Keyboard.A))
 			{
@@ -39,6 +39,7 @@ package com.moikka
 				leftPressed = true;
 				// ukkseli liikkuu x-akselilla speedin määräämällä nopeudella
 				x -= speed;
+				
 			}
 			else
 				// Kun vasen tai A näppäintä ei paineta, se tallennetaan "ei painetuksi" :DDD
