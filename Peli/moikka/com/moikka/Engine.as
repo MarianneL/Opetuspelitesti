@@ -10,8 +10,8 @@ package com.moikka
 	{
 		
 		public var mainMenu:MainMenu;
-		public var playScreen:BG;
-		public var house1Screen:House1Screen;
+		public var playScreen:Level1;
+		public var house1Screen:GoToHouse1;
 		
 		
 		public function Engine()
@@ -37,7 +37,7 @@ package com.moikka
 		
 		public function playTheGame()
 		{
-			playScreen = new BG(stage);
+			playScreen = new Level1(stage);
 			
 			if(mainMenu)
 			{
@@ -50,8 +50,7 @@ package com.moikka
 		
 		public function goToHouse1()
 		{
-			house1Screen = new House1Screen(stage);
-
+			house1Screen = new GoToHouse1(stage);
 			
 			if(playScreen)
 			{

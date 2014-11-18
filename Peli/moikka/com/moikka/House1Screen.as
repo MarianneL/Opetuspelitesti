@@ -9,7 +9,7 @@ package com.moikka
 		
 		public function House1Screen(stage:Stage)
 		{
-
+			
 		}
 	}
 }

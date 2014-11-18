@@ -1,34 +1,22 @@
 package com.moikka
 {
-	import com.senocular.utils.KeyObject;
+	import com.moikka.Engine;
 	
 	import flash.display.MovieClip;
 	import flash.display.SimpleButton;
 	import flash.display.Stage;
-	import flash.events.Event;
-	import flash.events.KeyboardEvent;
 	import flash.events.MouseEvent;
-	import flash.geom.Rectangle;
-	import flash.ui.Keyboard;
 	
 	public class BG extends MovieClip
 	{
 		public var mainClass:Engine;
-		private var stageRef:Stage;
 		
 		public function BG(stage:Stage)
 		{						
-			// Lisätään pelaaja näyttämölle
-			var ourPlayer:Player = new Player(stage);
-			stage.addChild(ourPlayer);
+			var house1btn:House1Btn = new House1Btn();
+			addChild(house1btn);
 			
-			// Asetetaan pelaaja siihen kohtaan mihin halutaan
-			ourPlayer.x = 40;
-			ourPlayer.y = 276;
-			
-			
-			
-			//house1.addEventListener(MouseEvent.CLICK, house1Clicked);
+			house1.addEventListener(MouseEvent.CLICK, house1Clicked);
 		}
 
 		
