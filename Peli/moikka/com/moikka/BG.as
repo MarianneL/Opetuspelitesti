@@ -1,6 +1,7 @@
 package com.moikka
 {
 	import com.moikka.Engine;
+	import com.moikka.Player;
 	
 	import flash.display.MovieClip;
 	import flash.display.SimpleButton;
@@ -16,13 +17,13 @@ package com.moikka
 			var house1btn:House1Btn = new House1Btn();
 			addChild(house1btn);
 			
-			house1.addEventListener(MouseEvent.CLICK, house1Clicked);
+			house1btn.addEventListener(MouseEvent.CLICK, goToHouse1);
 		}
 
 		
-		public function house1Clicked(event:MouseEvent)
+		public function goToHouse1(event:MouseEvent)
 		{
-			mainClass.goToHouse1();	
+			mainClass.playTheGame();
 		}
 
 

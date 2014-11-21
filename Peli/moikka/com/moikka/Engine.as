@@ -2,9 +2,9 @@ package com.moikka
 {
 	import flash.display.MovieClip;
 	import flash.display.Stage;
+	import flash.events.Event;
 	import flash.geom.Rectangle;
-	
-
+	import flash.display.SimpleButton;
 	
 	public class Engine extends MovieClip
 	{
@@ -17,7 +17,7 @@ package com.moikka
 		public function Engine()
 		{
 			// Aluksi tuodaan näytölle Main Menu
-			showMainMenu();		
+			showMainMenu();
 		}
 		
 		
